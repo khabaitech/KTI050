@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet">
+
+	<title>OUR TEAM</title>
+	<style>
+    .gallery {
+  --s: 130px;
+  
+  display: grid;
+  gap: 5px;
+  position: relative;
+}
+.gallery input {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  inset: calc(50% - var(--s)/3);
+  cursor: pointer;
+  --g: linear-gradient(#fff 0 0) no-repeat;
+  background: var(--g) 50%/60% 3px,var(--g) 50%/3px 60%,#222;
+  transition: 1.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.gallery > img {
+  width: var(--s);
+  aspect-ratio: 1;
+  grid-area: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(.5);
+  transition: 1s calc((var(--i) - 1)*.1s);
+}
+.gallery > img:nth-of-type(1) {--i:1;}
+.gallery > img:nth-of-type(2) {--i:2;}
+.gallery > img:nth-of-type(3) {--i:3;}
+.gallery > img:nth-of-type(4) {--i:4;}
+.gallery > img:nth-of-type(5) {--i:5;}
+.gallery > img:nth-of-type(6) {--i:6;}
+.gallery > img:nth-of-type(7) {--i:7;}
+.gallery > img:nth-of-type(8) {--i:8;}
+.gallery > img:nth-of-type(9) {--i:9;}
+
+.gallery > input:checked ~ img {
+  transform: 
+    rotate(calc(var(--i)* 360deg/8)) translate(calc(1.5*var(--s))) 
+    rotate(calc(var(--i)*-360deg/8));
+}
+.gallery > input:checked {
+  transform: rotate(135deg)
+}
+#a:hover{
+  position: absolute;
+  top: 0vh;
+  left: 50px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#b:hover{
+  position: absolute;
+  top: 0vh;
+  left: 0px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#c:hover{
+  position: absolute;
+  top: 0vh;
+  left: 0px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#d:hover{
+  position: absolute;
+  top: 0vh;
+  left: 50px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#e:hover{
+  position: absolute;
+  top: 0vh;
+  left: 50px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#f:hover{
+  position: absolute;
+  top: 0vh;
+  left: 50px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#g:hover{
+  position: absolute;
+  top: 0vh;
+  left: 50px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+#h:hover{
+  position: absolute;
+  top: 0vh;
+  left: 50px;
+  height: 500px;
+  width: 500px;
+  z-index: 1;
+}
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #83AF9B;
+}</style>
+</head>
+<body>
+  <center><p>OUR TEAM</p></center><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<div class="gallery">
+  <input type="checkbox" >
+  <img id="a" src="https://assets.vogue.in/photos/5f23c04f1d33754d11eaf778/2:3/w_2560%2Cc_limit/harry-potter-philosophers-stone-portrait-8.jpg" alt="a forest after an apocalypse">
+  <img id="b" src="https://i.pinimg.com/736x/e8/a0/3d/e8a03d40bbc7c07786c21d9924572581.jpg">
+  <img id="c" src="https://i.pinimg.com/564x/52/8c/93/528c93d89792acb4fd5ba3c1840dabf6.jpg" >
+  <img id="d" src="https://assets1.ignimgs.com/2018/11/12/03-1541993937860.jpg" >
+  <img id="e" src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/05/26/Pictures/_ac454030-9f26-11ea-88a1-96031f43cf2a.jpg" >
+  <img id="f" src="https://s.yimg.com/ny/api/res/1.2/eSO75Uuym.PLKaqh9yGtZg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTk1Mg--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/5a794d8ce9d784f07faef75a397e0c6f" >
+  <img id="g"src="https://images.ctfassets.net/usf1vwtuqyxm/6yl7KHNCnoctW5TGrOyNE1/d81e73479f15d2dfeb37dcf56c47b6b0/HP-F6-half-blood-prince-draco-malfoy-looking-concerned-web-landscape?fm=jpg&q=70&w=2560">
+  <img id="h"src="https://www.boomlive.in/h-upload/2022/10/15/720x1280_988144-robbie-coltrane-hagrid.jpg">
+</div>
+</body>
+</html>
